@@ -1,0 +1,17 @@
+# Node
+node_modules
+dist
+build
+
+# Java
+target
+*.jar
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Environment
+.env
