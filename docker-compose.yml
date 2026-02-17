@@ -15,7 +15,7 @@ services:
       - mysql_data:/var/lib/mysql
 
   backend:
-    build: ./backend
+    image: sathishsk22/encrypted-backend 
     container_name: spring_backend
     restart: always
     depends_on:
@@ -28,7 +28,7 @@ services:
       SPRING_DATASOURCE_PASSWORD: root
 
   frontend:
-    build: ./frontend
+    image: sathishsk22/encrypted-frontend
     container_name: file_frontend
     restart: always
     depends_on:
